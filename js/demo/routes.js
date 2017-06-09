@@ -137,11 +137,18 @@ angular
       }]
     }
   })
-  .state('app.curriculo', {
+  .state('app.incluir', {
     url: '/curriculo/incluir',
-    templateUrl: 'views/curriculo/cadastro.html?opcao=1',
+    templateUrl: 'views/curriculo/cadastro.html',
     ncyBreadcrumb: {
-      label: 'Curriculo'
+      label: 'Incluir'
+    }
+  })
+  .state('app.visualizar', {
+    url: '/curriculo/visualizar',
+    templateUrl: 'views/curriculo/visualizar.html',
+    ncyBreadcrumb: {
+      label: 'Visualizar'
     }
   })
 }]);
